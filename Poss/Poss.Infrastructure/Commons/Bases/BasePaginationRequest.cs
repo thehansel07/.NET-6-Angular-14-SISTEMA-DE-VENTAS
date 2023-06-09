@@ -9,7 +9,7 @@
 
         public string Order { get; set; } = "Asc";
 
-        public string Sort { get; set; } = null;
+        public string? Sort { get; set; } = null;
 
         public int Records
         {
