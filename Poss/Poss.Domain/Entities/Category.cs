@@ -13,7 +13,7 @@ public partial class Category
 
     public int AuditCreateUser { get; set; }
 
-    public DateTime AuditCreateDate { get; set; }
+    public DateTime? AuditCreateDate { get; set; }
 
     public int? AuditUpdateUser { get; set; }
 

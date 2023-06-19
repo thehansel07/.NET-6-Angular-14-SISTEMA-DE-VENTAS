@@ -7,12 +7,13 @@ namespace Poss.Infrastructure.Persistences.Repositories
     {
 
         public readonly HanselCabreraPruebaContext _context;
-        public ICategoryRepository categoryRepository { get; private set; }
+
+        public ICategoryRepository Category { get; private set; }
 
         public UnitOfWork(HanselCabreraPruebaContext context)
         {
             _context = context;
-            categoryRepository = new CategoryRepository(_context);
+            Category = new CategoryRepository(_context);
         }
 
         public void Dispose()

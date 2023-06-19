@@ -9,7 +9,7 @@ namespace Poss.Infrastructure.Persistences.Interfaces
     public interface IUnitOfWork : IDisposable
     {
         //Declaracion o matricula de nuestra interfaces a nivel de repository
-        ICategoryRepository categoryRepository { get; }
+        ICategoryRepository Category { get; }
 
         void SaveChange();
 
