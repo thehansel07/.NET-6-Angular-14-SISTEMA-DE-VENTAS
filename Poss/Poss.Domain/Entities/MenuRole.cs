@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Poss.Domain.Entities;
+﻿namespace Poss.Domain.Entities;
 
 public partial class MenuRole
 {

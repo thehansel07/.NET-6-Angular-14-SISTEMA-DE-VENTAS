@@ -2,6 +2,8 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Poss.Infrastructure.Persistences.Context;
+using Poss.Infrastructure.Persistences.Interfaces;
+using Poss.Infrastructure.Persistences.Repositories;
 
 namespace Poss.Infrastructure.Extensions
 {
@@ -16,6 +18,7 @@ namespace Poss.Infrastructure.Extensions
                 options => options.UseSqlServer(
                    configuration.GetConnectionString("DevConnectionString"), b => b.MigrationsAssembly(Assembly)), ServiceLifetime.Transient);
 
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
             return services;
         
         }

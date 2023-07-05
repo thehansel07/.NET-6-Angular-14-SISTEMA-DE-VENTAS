@@ -11,7 +11,8 @@ namespace Poss.Application.Interfaces
         Task<BaseReponse<BaseEntityResponse<CategoryResponseDto>>> ListCategories(BaseFilterRequest filters);
         Task<BaseReponse<IEnumerable<CategorySelectResponseDto>>> ListSelectCategories();
         Task<BaseReponse<CategoryResponseDto>> CategoryById(int categoriId);
-        Task<BaseReponse<bool>> RegisterCategory(CategoryResponseDto responseDto);
+        Task<BaseReponse<bool>> RegisterCategory(CategoryRequestDto responseDto);
         Task<BaseReponse<bool>> EditCategory(int categoryId, CategoryRequestDto requestDto);
+        Task<BaseReponse<bool>> RemoveCategory(int categoryId);
     }
 }

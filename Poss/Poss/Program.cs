@@ -1,3 +1,4 @@
+using Poss.Application.Extensions;
 using Poss.Infrastructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,7 @@ var Configuration = builder.Configuration;
 
 //Global metodo de uso de extension
 builder.Services.AddInjectionInfraestructure(Configuration);
+builder.Services.AddInjectionApplicacion(Configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

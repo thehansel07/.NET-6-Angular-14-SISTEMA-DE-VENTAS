@@ -32,9 +32,6 @@ public partial class HanselCabreraPruebaContext : DbContext
     public virtual DbSet<Menu> Menus { get; set; }
 
     public virtual DbSet<MenuRole> MenuRoles { get; set; }
-
-    public virtual DbSet<Persona> Personas { get; set; }
-
     public virtual DbSet<Product> Products { get; set; }
 
     public virtual DbSet<Provider> Providers { get; set; }
